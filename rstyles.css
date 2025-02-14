@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    color: #ededed;
+    overflow-x: hidden; /* Evitar desbordamiento horizontal */
+}
+
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar a{
+    font-size: 18px;
+    color:#ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color:#00abf0;
+}
+
+.home{
+    height: 100vh;
+    background: url('foto.png') no-repeat; 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    flex-direction: column; /* Alineación vertical para dispositivos pequeños */
+    justify-content: center;
+}
+
+.home-content{
+    z-index: 2;
+    text-align: center; /* Centrar texto */
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color:#00abf0;
+}
+
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content .btn-box{
+    display: flex;
+    justify-content: center; /* Alineación centrada */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btn-box a{
+    width: 150px;
+    height: 50px;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    transition: .5s;
+}
+
+.btn-box a:hover{
+    color:#00abf0;
+}
+
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a{
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color:#00abf0;
+    text-decoration: none;
+    z-index: 1;
+    transition: .5s;
+}
+
+.home-sci a:hover{
+    color:#081b29;
+}
+
+.home-imgHover{
+    position: absolute;
+    top:0;
+    right: 30px;
+    width: 625px;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+    pointer-events: none;
+}
+
+.home-imgHover:hover{
+    background:#081b29;
+    opacity: .8;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    /* Header ajustado en dispositivos pequeños */
+    .header{
+        padding: 20px 5%;
+    }
+    
+    /* Navbar en dispositivos pequeños */
+    .navbar{
+        display: none; /* Ocultar el navbar normal */
+    }
+
+    /* Home content */
+    .home-content h1{
+        font-size: 40px; /* Reducir tamaño de texto */
+    }
+    
+    .home-content h3{
+        font-size: 24px;
+    }
+
+    .home-content p{
+        font-size: 14px;
+        margin: 10px 0 20px;
+    }
+
+    .btn-box a{
+        font-size: 16px;
+        width: 120px;
+    }
+
+    .home-sci{
+        width: 130px; /* Reducir el tamaño de los íconos */
+    }
+
+    .home-sci a{
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    /* Imagen de hover */
+    .home-imgHover{
+        width: 100%;
+        right: 0;
+    }
+}
+
+/* Estilos para el menú hamburguesa con animación */
+@media (max-width: 500px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: #081b29;
+        width: 100%;
+        padding: 10px;
+        display: none; /* Menú oculto por defecto */
+        opacity: 0; /* Iniciar con opacidad 0 */
+        transform: translateY(-20px); /* Iniciar fuera de la vista */
+        transition: all 0.3s ease; /* Transición suave */
+    }
+
+    .navbar.active {
+        display: flex;
+        opacity: 1; /* Menú visible */
+        transform: translateY(0); /* Desliza hacia abajo */
+    }
+
+    .navbar a {
+        margin-left: 0;
+        text-align: center;
+        padding: 15px;
+        font-size: 20px;
+        opacity: 0;
+        transform: translateX(-20px); /* Iniciar desde la izquierda */
+        transition: all 0.3s ease 0.2s; /* Deslizar con retraso */
+    }
+
+    .navbar.active a {
+        opacity: 1;
+        transform: translateX(0); /* Desliza hacia la posición original */
+    }
+
+    /* Ajustar botón de hamburguesa */
+    .logo {
+        cursor: pointer;
+    }
+
+    .logo i {
+        font-size: 30px; /* Asegura que el ícono de hamburguesa sea visible */
+        color: #ededed;
+    }
+}
