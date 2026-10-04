@@ -40,7 +40,7 @@ en `https://juanpablex.github.io/portfolio`. Cuenta de GitHub: **juanpablex**
 
 - **ERP Agent Lab** (`juanpablex/erp-agent-lab`, público, MIT, código nuevo y ficticio):
   servidor MCP + aprobación humana. Demo: `https://juanpablex.github.io/erp-agent-lab/`.
-  Tarjeta en `portafolios.html`. Etapas pendientes: panel de trazas y evals.
+  Tarjeta en `portafolios.html` (menciona trazas y evals). Hechas: servidor MCP, aprobación humana, panel de trazas y evals (16 casos, 1 limitación conocida). Pendiente opcional: modo con IA real (necesita crédito de API).
   Los commits van con la identidad de Juan Pablo (noreply de GitHub) y
   `Co-Authored-By` de Claude.
 
