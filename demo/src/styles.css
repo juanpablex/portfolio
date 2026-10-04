@@ -1,0 +1,23 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',system-ui,sans-serif}
+body{background:#081b29;color:#ededed}
+.app{max-width:1200px;margin:0 auto;padding:16px}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:16px}
+header a{color:#00abf0;text-decoration:none}
+h1{font-size:1.4rem}header span{color:#8fa3b0;font-size:13px}
+h2{font-size:1rem;color:#00abf0;margin-bottom:8px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:800px){.grid{grid-template-columns:1fr}}
+.panel{background:#112b3c;border-radius:8px;padding:16px;margin-bottom:16px}
+.chat{display:flex;flex-direction:column;height:80vh;margin:0}
+.msgs{flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:10px}
+.msg{max-width:92%;padding:10px 14px;border-radius:10px;background:#0c2435}
+.msg.me{align-self:flex-end;background:#00abf0;color:#081b29}
+.view{margin-top:8px;background:#112b3c;border-radius:6px;padding:8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.chips button{background:none;border:1px solid #00abf0;color:#00abf0;border-radius:16px;padding:3px 10px;font-size:12px;cursor:pointer}
+form{display:flex;gap:8px}
+input{flex:1;padding:10px;border-radius:6px;border:0;background:#0c2435;color:#ededed}
+form button{padding:0 18px;border:0;border-radius:6px;background:#00abf0;color:#081b29;font-weight:600;cursor:pointer}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{text-align:left;padding:6px;border-bottom:1px solid #1d3d52}
+.map{width:100%;background:#0c2435;border-radius:6px;max-height:300px}
