@@ -32,7 +32,7 @@ en `https://juanpablex.github.io/portfolio`. Cuenta de GitHub: **juanpablex**
    tarjeta en `portafolios.html`. También hecho: `demo/` (React + Vite + recharts,
    datos ficticios, chat con respuestas preparadas, 2 gráficos + mapa SVG) y
    workflow `.github/workflows/pages.yml` (arma la raíz estática + `demo/dist`).
-   Falta: modo IA real preparado, sin activar (proxy Cloudflare Workers).
+   Demo principal ahora: repo `juanpablex/ai-agent-frontend` (público, Pages en `https://juanpablex.github.io/ai-agent-frontend/`), enlazada desde `asistente-ia.html`. Falta: modo IA real preparado, sin activar (proxy Cloudflare Workers).
 
 ## Proyecto destacado: Asistente Virtual (hecho en el trabajo)
 
