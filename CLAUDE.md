@@ -79,6 +79,8 @@ como app web standalone y por WhatsApp.
 
 ## Forma de trabajar
 
+- Todo el contenido visible del sitio (páginas, menús, textos de tarjetas) va en
+  **inglés**; solo mis respuestas a él son en español.
 - El usuario está gastando un crédito de sesiones en la nube (USD 100, vence el
   5 de noviembre) — ser eficiente, no hacer QA visual con screenshots salvo que
   lo pida; él revisa visualmente.
