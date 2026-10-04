@@ -28,11 +28,13 @@ en `https://juanpablex.github.io/portfolio`. Cuenta de GitHub: **juanpablex**
 ## Pendiente
 
 1. **Proyecto destacado: "Asistente Virtual con agente de IA para ERP"** (ver
-   abajo). Hecho: página `asistente-ia.html` (caso de estudio en inglés, SVG) y
-   tarjeta en `portafolios.html`. También hecho: `demo/` (React + Vite + recharts,
-   datos ficticios, chat con respuestas preparadas, 2 gráficos + mapa SVG) y
-   workflow `.github/workflows/pages.yml` (arma la raíz estática + `demo/dist`).
-   Demo principal ahora: repo `juanpablex/ai-agent-frontend` (público, Pages en `https://juanpablex.github.io/ai-agent-frontend/`), enlazada desde `asistente-ia.html`. Falta: modo IA real preparado, sin activar (proxy Cloudflare Workers).
+   abajo). Hecho: página `asistente-ia.html` (caso de estudio en inglés, SVG),
+   tarjeta en `portafolios.html` y demo pública en el repo
+   `juanpablex/ai-agent-frontend` (Pages: `https://juanpablex.github.io/ai-agent-frontend/`),
+   enlazada desde `asistente-ia.html`. La demo liviana `demo/` de este repo se
+   eliminó. Workflow `.github/workflows/pages.yml`: publica la raíz estática.
+   Falta: modo IA real preparado, sin activar (proxy Cloudflare Workers, en
+   `ai-agent-frontend`).
 
 ## Proyecto destacado: Asistente Virtual (hecho en el trabajo)
 
@@ -65,9 +67,9 @@ como app web standalone y por WhatsApp.
 **Qué construir en el portafolio:**
 - Página de caso de estudio: problema, solución, mi rol, stack, decisiones
   técnicas interesantes (las de arriba), diagramas de arquitectura en SVG.
-- Carpeta `demo/` con una demo en React + Vite (chat + 2-3 paneles de reportes
-  con gráficos + un mapa) usando SOLO JSON con datos ficticios, compilada a
-  estático y publicada con GitHub Actions a Pages.
+- Demo en React + Vite (chat + reportes con gráficos + mapas) usando SOLO JSON
+  con datos ficticios, publicada con GitHub Actions a Pages (hoy en el repo
+  `ai-agent-frontend`).
 - Chat de la demo: respuestas preparadas por palabras clave (muestran tablas y
   gráficos) como modo por defecto. Dejar preparado, sin activar, un modo de IA
   real: el loop agéntico corre en el navegador y las herramientas consultan los

@@ -18,19 +18,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-          cache-dependency-path: demo/package-lock.json
-      - name: Build demo
-        run: npm ci && npm run build
-        working-directory: demo
       - name: Assemble site
         run: |
           mkdir _site
-          rsync -a --exclude='.git' --exclude='.github' --exclude='demo' --exclude='_site' --exclude='CLAUDE.md' ./ _site/
-          cp -r demo/dist _site/demo
+          rsync -a --exclude='.git' --exclude='.github' --exclude='_site' --exclude='CLAUDE.md' ./ _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
