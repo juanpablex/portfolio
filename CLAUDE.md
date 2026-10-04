@@ -11,8 +11,7 @@ en `https://juanpablex.github.io/portfolio`. Cuenta de GitHub: **juanpablex**
 - `index.html` + `style.css` — portada. Estilo: fondo `#081b29`, acento
   `#00abf0`, íconos de boxicons (unpkg). Mantener ese estilo visual.
 - `portafolios.html` + `portafolios.css` — grilla de proyectos.
-- `moviereviews/` (plantilla de terceros, Themezy) se ELIMINÓ del sitio; no volver a presentarla como trabajo propio. Queda una copia dentro de `portfolio/src/moviereviews` (proyecto React viejo, sin enlazar).
-- `portfolio/` — un proyecto React viejo (revisar antes de tocar).
+- (Se eliminó el proyecto React viejo `portfolio/` y la plantilla de terceros `moviereviews/`; siguen en el historial de Git si hicieran falta.)
 
 ## Ya hecho
 
