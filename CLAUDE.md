@@ -31,7 +31,7 @@ en `https://juanpablex.github.io/portfolio`. Cuenta de GitHub: **juanpablex**
    abajo). Hecho: página `asistente-ia.html` (caso de estudio en inglés, SVG),
    tarjeta en `portafolios.html` y demo pública en el repo
    `juanpablex/ai-agent-frontend` (Pages: `https://juanpablex.github.io/ai-agent-frontend/`),
-   enlazada desde `asistente-ia.html`. La demo liviana `demo/` de este repo se
+   enlazada desde `asistente-ia.html` (ENLACES RETIRADOS temporalmente: la demo y el repo pasan a privado hasta tener autorización escrita de la empresa; `asistente-ia.html` ofrece "Request a demo" por correo y se quitó la tarjeta del código en `portafolios.html`; restaurar al recibir el permiso). La demo liviana `demo/` de este repo se
    eliminó. Workflow `.github/workflows/pages.yml`: publica la raíz estática.
    Falta: modo IA real preparado, sin activar (proxy Cloudflare Workers, en
    `ai-agent-frontend`).
