@@ -188,3 +188,15 @@ body {
     transform: translateY(-1px) scale(1.04);
     outline: none;
 }
+
+/* Preview image at the top of a card (the card has 20px of padding) */
+.portfolio-item .card-img {
+    display: block;
+    width: calc(100% + 40px);
+    height: 210px;
+    margin: -20px -20px 14px;
+    object-fit: cover;
+    object-position: center top;
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
+.portfolio-item .card-img.mid { object-position: center; }
