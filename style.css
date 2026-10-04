@@ -30,17 +30,6 @@ body{
     text-decoration: none;
     font-weight: 600;
 }
-.logo::before{
-    content:'';
-    position:absolute;
-    top:0;
-    right:0;
-    width: 100%;
-    height: 100%;   
-    background:#081b29;
-    animation:showRight 1s ease forwards;
-    animation-delay: .4s;
-}
 .navbar a{
     font-size: 18px;
     color:#ededed;
@@ -76,49 +65,16 @@ body{
     font-weight: 700;
     line-height: 1.2;
 }
-.home-content h1::before{
-    content:'';
-    position:absolute;
-    top:0;
-    right:0;
-    width: 100%;
-    height: 100%;  
-    background:#081b29;
-    animation:showRight 1s ease forwards;
-    animation-delay: 1s;
-}
 .home-content h3{
     position:relative;
     font-size: 32px;
     font-weight: 700;
     color:#00abf0;
 }
-.home-content h3::before{
-    content:'';
-    position:absolute;
-    top:0;
-    right:0;
-    width: 100%;
-    height: 100%;
-    background:#081b29;
-    animation:showRight 1s ease forwards;
-    animation-delay: 1.3s;
-}
 .home-content p{
     position:relative;
     font-size: 16px;
     margin:20px 0 40px;
-}
-.home-content p::before{
-    content:'';
-    position:absolute;
-    top:0;
-    right:0;
-    width: 100%;
-    height: 100%;
-    background:#081b29;
-    animation:showRight 1s ease forwards;
-    animation-delay: 1.6s;
 }
 .home-content .btn-box{
     position:relative;
@@ -129,18 +85,6 @@ body{
 }
 .home-content h1:nth-child(2) {
     padding-left: 190px; /* Ajusta para más espacio */
-}
-.home-content .btn-box::before{
-    content:'';
-    position:absolute;
-    top:0;
-    right:0;
-    width: 100%;
-    height: 100%;
-    background:#081b29;
-    animation:showRight 1s ease forwards;
-    animation-delay: 1.9s;
-    z-index: 2;
 }
 .btn-box a{
     position: relative;
@@ -195,18 +139,6 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.home-sci::before{
-    content:'';
-    position:absolute;
-    top:0;
-    right:0;
-    width: 100%;
-    height: 100%;
-    background:#081b29;
-    animation:showRight 1s ease forwards;
-    animation-delay: 2.5s;
-    z-index: 2;
-}
 .home-sci a{
     position:relative;
     display:inline-flex;
@@ -251,7 +183,7 @@ body{
     background: transparent;
     transition: 3s;
     animation:manipActiveHover .1s forwards;
-    animation-delay: 4s;
+    animation-delay: 1.6s;
     pointer-events: none;
 }
 .home-imgHover:hover{
@@ -259,19 +191,24 @@ body{
     opacity: .8;
 }
 
-.home-imgHover::after{
+
+
+/* The whole page is revealed in one sweep from left to right: a single curtain of the page color that shrinks. */
+body::before{
     content:'';
-    position:absolute;
+    position:fixed;
     top:0;
     right:0;
-    width: 100%;
-    height: 100%;
+    width:100%;
+    height:100%;
     background:#081b29;
-    animation:showRight 1s ease forwards;
-    animation-delay: 3s;
-    z-index: 100;
+    z-index:1000;
+    pointer-events:none;
+    animation:showRight 1.3s cubic-bezier(.65,0,.25,1) .25s forwards;
 }
-
+@media (prefers-reduced-motion: reduce){
+    body::before{ display:none; }
+}
 
 @keyframes showRight{
     100%{
