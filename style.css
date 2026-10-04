@@ -311,6 +311,8 @@ body{
         inset: 0;
         background: rgba(8, 27, 41, .72);
     }
+    .home { position: relative; }
+    .home-content { position: relative; }
     .home-imgHover { display: none; }
     .home-content h1 { font-size: 38px; }
     .home-content h1:nth-child(2) { padding-left: 0; }
