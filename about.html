@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Juan Pablo Coca Robles</title>
+<meta name="description" content="I connect language models to business data and make them safe to use: limited tools, human approval and checkable answers.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About | Juan Pablo Coca Robles">
+<meta property="og:description" content="I connect language models to business data and make them safe to use: limited tools, human approval and checkable answers.">
+<meta property="og:url" content="https://juanpablex.github.io/portfolio/about.html">
+<meta property="og:image" content="https://juanpablex.github.io/portfolio/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About | Juan Pablo Coca Robles">
+<meta name="twitter:description" content="I connect language models to business data and make them safe to use: limited tools, human approval and checkable answers.">
+<meta name="twitter:image" content="https://juanpablex.github.io/portfolio/og-image.jpg">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',system-ui,sans-serif}
+body{background:#081b29;color:#ededed;line-height:1.6}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 8%;border-bottom:1px solid #112b3c}
+header a{color:#ededed;text-decoration:none;margin-left:24px}
+header a.logo{color:#00abf0;font-weight:700;margin:0}
+header a:hover,header a.active{color:#00abf0}
+main{max-width:960px;margin:0 auto;padding:40px 6% 80px}
+h1{font-size:2.2rem;margin-bottom:8px}
+h2{color:#00abf0;margin:40px 0 12px}
+.lead{color:#b8c4cc;margin-bottom:16px;font-size:1.05rem}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.tags span{border:1px solid #00abf0;color:#00abf0;border-radius:20px;padding:2px 12px;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.card{background:#112b3c;border-radius:8px;padding:18px 20px}
+.card h3{margin-bottom:6px;font-size:1.05rem}
+.card p{color:#b8c4cc;font-size:.95rem}
+.links a{color:#00abf0}
+.btn{display:inline-block;margin:8px 10px 0 0;padding:10px 24px;background:#00abf0;color:#081b29;border-radius:6px;text-decoration:none;font-weight:600}
+.btn.alt{background:transparent;border:1px solid #00abf0;color:#00abf0}
+@media(max-width:700px){.grid{grid-template-columns:1fr}header{padding:16px 5%}header a{margin-left:14px}}
+</style>
+</head>
+<body>
+<header>
+  <a href="index.html" class="logo">Juan Pablo.</a>
+  <nav><a href="index.html">Home</a><a href="portafolios.html">Portfolio</a><a href="about.html" class="active">About</a><a href="mailto:juanpablococarobles@gmail.com">Contact</a></nav>
+</header>
+<main>
+  <h1>About me</h1>
+  <p class="lead">I'm Juan Pablo Coca Robles, an AI agent developer. I connect language models to business data and make them safe to use: tools with limited permissions, human approval for every change, and answers you can check.</p>
+
+  <h2>What I build</h2>
+  <div class="grid">
+    <div class="card"><h3>Agents with tool use</h3><p>Agent loops on the Claude API: tools, conversation memory, prompt caching and token budgets, with traces that show what the agent did.</p></div>
+    <div class="card"><h3>MCP servers</h3><p>Tools exposed over the Model Context Protocol, so any compatible client can use the same safe set of actions.</p></div>
+    <div class="card"><h3>Business integrations</h3><p>Agents connected to ERPs, SQL Server, Power BI and WhatsApp, with strictly read-only data access.</p></div>
+    <div class="card"><h3>React and React Native</h3><p>Chat, reports, charts, maps and mobile interfaces, with the care for detail that makes an agent pleasant to use.</p></div>
+  </div>
+
+  <h2>How I work</h2>
+  <div class="card"><ul style="padding-left:20px">
+    <li><b>The agent proposes, a person decides.</b> Actions that change something wait for an explicit approval.</li>
+    <li><b>Read-only by default.</b> Agents call predefined functions; they never write free-form queries.</li>
+    <li><b>Show the work.</b> Tool calls, timings and tokens are visible, not hidden.</li>
+    <li><b>Test the agent.</b> Routing, safety and approval rules are checked by automated evals.</li>
+    <li><b>Honest labels.</b> A scripted demo says it is scripted; a real model says whose key or account it uses.</li>
+  </ul></div>
+
+  <h2>Tools</h2>
+  <div class="tags"><span>Claude API</span><span>Tool use</span><span>MCP</span><span>Prompt caching</span><span>TypeScript</span><span>Node.js</span><span>React</span><span>Vite</span><span>React Native</span><span>Expo</span><span>Tailwind</span><span>Recharts</span><span>SQL Server</span><span>ASP.NET Core</span><span>WhatsApp Cloud API</span><span>GitHub Actions</span></div>
+
+  <h2>Projects</h2>
+  <div class="card links"><p>
+    <b><a href="https://juanpablex.github.io/erp-agent-lab/">ERP Agent Lab</a></b>: an MCP server and an agent that can only propose actions, with trace panel and evals.<br>
+    <b><a href="https://juanpablex.github.io/invoice-agent/">Invoice Agent</a></b>: an Expo app where an agent reads an invoice and you approve with a swipe.<br>
+    <b><a href="https://juanpablex.github.io/rag-agent/">Docs Agent</a></b>: answers about documents and cites the exact passage, with a check for invented citations.<br>
+    <b><a href="asistente-ia.html">Virtual Assistant with an AI agent for ERP</a></b>: architecture and technical decisions.
+  </p></div>
+
+  <h2>Contact</h2>
+  <p class="lead">I'm open to AI agent and React / React Native roles and projects.</p>
+  <a class="btn" href="mailto:juanpablococarobles@gmail.com">Email me</a>
+  <a class="btn alt" href="https://www.linkedin.com/in/juanpablex/" target="_blank" rel="noopener">LinkedIn</a>
+  <a class="btn alt" href="https://github.com/juanpablex" target="_blank" rel="noopener">GitHub</a>
+</main>
+</body>
+</html>
