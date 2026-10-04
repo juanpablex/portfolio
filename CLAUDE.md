@@ -36,6 +36,14 @@ en `https://juanpablex.github.io/portfolio`. Cuenta de GitHub: **juanpablex**
    Falta: modo IA real preparado, sin activar (proxy Cloudflare Workers, en
    `ai-agent-frontend`).
 
+## Otro proyecto enlazado
+
+- **ERP Agent Lab** (`juanpablex/erp-agent-lab`, público, MIT, código nuevo y ficticio):
+  servidor MCP + aprobación humana. Demo: `https://juanpablex.github.io/erp-agent-lab/`.
+  Tarjeta en `portafolios.html`. Etapas pendientes: panel de trazas y evals.
+  Los commits van con la identidad de Juan Pablo (noreply de GitHub) y
+  `Co-Authored-By` de Claude.
+
 ## Proyecto destacado: Asistente Virtual (hecho en el trabajo)
 
 Lo construí en mi trabajo: asistente con chat + reportes gerenciales para un ERP
