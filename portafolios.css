@@ -145,3 +145,15 @@ body {
 @media (max-width: 400px) {
     .navbar a { font-size: 13px; margin-left: 12px; }
 }
+
+/* QR code on a card: handy on a desktop screen, pointless on a phone (just tap the card) */
+.portfolio-item .qr {
+    display: block;
+    margin: 14px auto 0;
+    padding: 4px;
+    background: #fff;
+    border-radius: 6px;
+}
+@media (max-width: 768px) {
+    .portfolio-item .qr { display: none; }
+}
