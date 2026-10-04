@@ -11,7 +11,7 @@ en `https://juanpablex.github.io/portfolio`. Cuenta de GitHub: **juanpablex**
 - `index.html` + `style.css` — portada. Estilo: fondo `#081b29`, acento
   `#00abf0`, íconos de boxicons (unpkg). Mantener ese estilo visual.
 - `portafolios.html` + `portafolios.css` — grilla de proyectos.
-- `moviereviews/` — proyecto Movie Review Hub (estático).
+- `moviereviews/` — plantilla de terceros (Themezy), ya NO enlazada desde el portafolio; no volver a presentarla como trabajo propio.
 - `portfolio/` — un proyecto React viejo (revisar antes de tocar).
 
 ## Ya hecho
