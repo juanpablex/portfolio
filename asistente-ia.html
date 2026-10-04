@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent for ERP | Juan Pablo Coca Robles</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',system-ui,sans-serif}
+body{background:#081b29;color:#ededed;line-height:1.6}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 8%;border-bottom:1px solid #112b3c}
+header a{color:#ededed;text-decoration:none;margin-left:24px}
+header a.logo{color:#00abf0;font-weight:700;margin:0}
+header a:hover,header a.active{color:#00abf0}
+main{max-width:960px;margin:0 auto;padding:40px 6% 80px}
+h1{font-size:2.2rem;margin-bottom:8px}
+h2{color:#00abf0;margin:40px 0 12px}
+h3{margin:16px 0 6px}
+.lead{color:#b8c4cc;margin-bottom:16px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.tags span{border:1px solid #00abf0;color:#00abf0;border-radius:20px;padding:2px 12px;font-size:13px}
+.card{background:#112b3c;border-radius:8px;padding:20px;margin:12px 0}
+ul{padding-left:20px}li{margin:6px 0}
+svg{width:100%;height:auto;background:#0c2435;border-radius:8px;margin:12px 0}
+svg text{fill:#ededed;font-size:13px;text-anchor:middle}
+svg .box{fill:#112b3c;stroke:#00abf0;stroke-width:1.5}
+svg .ro{fill:#112b3c;stroke:#2ecc71;stroke-width:1.5}
+svg line,svg path{stroke:#00abf0;stroke-width:1.5;fill:none}
+.note{font-size:13px;color:#8fa3b0}
+.btn{display:inline-block;margin-top:16px;padding:10px 24px;background:#00abf0;color:#081b29;border-radius:6px;text-decoration:none;font-weight:600}
+</style>
+</head>
+<body>
+<header>
+  <a href="index.html" class="logo">Juan Pablo.</a>
+  <nav><a href="index.html">Home</a><a href="portafolios.html" class="active">Portafolio</a><a href="mailto:juanpablococarobles@gmail.com">Contact</a></nav>
+</header>
+<main>
+  <h1>Virtual Assistant with an AI Agent for ERP</h1>
+  <p class="lead">A chat and executive-reporting assistant built on top of an ERP for an import and distribution company. It runs as an embedded widget inside the ERP, as a standalone web app and over WhatsApp.</p>
+  <div class="tags"><span>Node.js</span><span>TypeScript</span><span>Claude API</span><span>Tool use</span><span>SQL Server</span><span>React</span><span>Vite</span><span>Tailwind</span><span>Recharts</span><span>ASP.NET Core</span><span>WhatsApp Cloud API</span></div>
+  <p class="note">Built at my job. The source code and real data belong to the company, so this page describes the design only. The demo uses fictitious data ("Empresa Demo") and is rebuilt from scratch.</p>
+
+  <h2>The problem</h2>
+  <p>Managers had to ask analysts for sales, stock and receivables numbers, or dig through several screens in the ERP, a routing/CRM tool and Power BI. Answers came late and in different formats.</p>
+
+  <h2>The solution</h2>
+  <p>One assistant that answers questions in natural language, shows tables and charts, and sends scheduled reports. Each channel only sees the data it needs:</p>
+  <div class="card"><ul>
+    <li><b>Widget in the ERP:</b> ERP data only.</li>
+    <li><b>Standalone app:</b> ERP + salesperson routing + Power BI together.</li>
+    <li><b>WhatsApp:</b> routing and commercial data, with charts sent as images and links to reports.</li>
+  </ul></div>
+
+  <h2>My role</h2>
+  <p>I designed and built it end to end: the backend, the agent loop, the Power BI microservice, the WhatsApp integration and both React frontends.</p>
+
+  <h2>Architecture</h2>
+  <svg viewBox="0 0 800 330" role="img" aria-label="Architecture diagram">
+    <rect class="box" x="20" y="20" width="150" height="46" rx="6"/><text x="95" y="48">ERP widget (Shadow DOM)</text>
+    <rect class="box" x="20" y="130" width="150" height="46" rx="6"/><text x="95" y="158">Standalone React app</text>
+    <rect class="box" x="20" y="240" width="150" height="46" rx="6"/><text x="95" y="268">WhatsApp user</text>
+    <rect class="box" x="230" y="240" width="150" height="46" rx="6"/><text x="305" y="268">WhatsApp Cloud API</text>
+    <rect class="box" x="290" y="100" width="200" height="110" rx="8"/>
+    <text x="390" y="130">Express API (Node + TS)</text><text x="390" y="154">Agent loop + memory</text><text x="390" y="178">Token quota per user</text><text x="390" y="198">Scheduled messages</text>
+    <rect class="box" x="590" y="20" width="190" height="46" rx="6"/><text x="685" y="48">Claude API (tool use)</text>
+    <rect class="ro" x="590" y="120" width="190" height="46" rx="6"/><text x="685" y="148">Repository functions</text>
+    <rect class="ro" x="590" y="205" width="190" height="46" rx="6"/><text x="685" y="233">SQL Server (read-only)</text>
+    <rect class="box" x="590" y="275" width="190" height="46" rx="6"/><text x="685" y="303">.NET service → Power BI</text>
+    <line x1="170" y1="43" x2="290" y2="125"/><line x1="170" y1="153" x2="290" y2="153"/>
+    <line x1="170" y1="263" x2="230" y2="263"/><line x1="305" y1="240" x2="360" y2="210"/>
+    <line x1="490" y1="125" x2="590" y2="43"/><line x1="490" y1="153" x2="590" y2="143"/>
+    <line x1="685" y1="166" x2="685" y2="205"/><line x1="490" y1="195" x2="590" y2="298"/>
+  </svg>
+  <p class="note">Green = read-only data path.</p>
+
+  <h2>Technical decisions</h2>
+  <div class="card">
+    <h3>Strictly read-only data access</h3>
+    <p>Three layers: a SQL login without write permissions, a guard in code that rejects anything that is not SELECT/WITH, and an agent that can only call predefined repository functions. It never writes free-form SQL.</p>
+    <h3>Agent loop with tool use</h3>
+    <p>Claude API with tool use in an agentic loop and conversation memory. The model picks a tool, the backend runs it and the result goes back until the answer is ready.</p>
+    <h3>Prompt caching</h3>
+    <p>The system prompt and tool definitions are cached, which lowered the cost per message.</p>
+    <h3>One chat per channel</h3>
+    <p>Each channel has its own tools and scope, so a user only reaches data that fits that channel.</p>
+    <h3>Power BI as a service</h3>
+    <p>A small ASP.NET Core microservice exposes the Power BI Desktop model over HTTP so the agent can query it like any other tool.</p>
+    <h3>WhatsApp Business Cloud API</h3>
+    <p>Webhook-based, with charts sent as images, links to reports and automated scheduled messages.</p>
+    <h3>Cost control</h3>
+    <p>AI token consumption is tracked and limited per user.</p>
+    <h3>Two frontend builds</h3>
+    <p>React + Vite + Tailwind + Recharts, plus maps (salesperson routes and heat maps). One build for the standalone app and another for the embeddable widget, isolated with Shadow DOM.</p>
+  </div>
+
+  <h2>Demo</h2>
+  <p>An interactive demo with fictitious data is coming soon.</p>
+  <a class="btn" href="portafolios.html">Back to projects</a>
+</main>
+</body>
+</html>

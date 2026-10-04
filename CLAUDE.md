@@ -28,7 +28,9 @@ en `https://juanpablex.github.io/portfolio`. Cuenta de GitHub: **juanpablex**
 ## Pendiente
 
 1. **Proyecto destacado: "Asistente Virtual con agente de IA para ERP"** (ver
-   abajo).
+   abajo). Hecho: página `asistente-ia.html` (caso de estudio en inglés, SVG) y
+   tarjeta en `portafolios.html`. Falta: `demo/` (React + Vite + datos ficticios),
+   GitHub Actions a Pages y modo IA real preparado (proxy Cloudflare Workers).
 
 ## Proyecto destacado: Asistente Virtual (hecho en el trabajo)
 
