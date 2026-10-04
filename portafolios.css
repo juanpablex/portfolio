@@ -108,3 +108,22 @@ body {
 }
 
 
+
+.portfolio-item.upcoming {
+    opacity: .7;
+}
+
+.portfolio-item.upcoming:hover {
+    background: #112b3c;
+    color: inherit;
+}
+
+.badge {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 2px 10px;
+    border: 1px solid #00abf0;
+    border-radius: 20px;
+    color: #00abf0;
+    font-size: 12px;
+}

@@ -16,24 +16,18 @@ en `https://juanpablex.github.io/portfolio`. Cuenta de GitHub: **juanpablex**
 
 ## Ya hecho
 
-- Subtítulo de la portada cambiado a **"AI Agent Developer | React | React Native"**
-  (antes "Full-stack Developer").
-- Ícono de GitHub ahora apunta a `https://github.com/juanpablex`.
+- Portada: subtítulo **"AI Agent Developer | React | React Native"**, párrafo
+  nuevo orientado a agentes de IA, ícono de GitHub → `https://github.com/juanpablex`.
+- Email publicado (autorizado): ícono de Gmail, "Let's Talk" y "Contact" usan
+  `mailto:juanpablococarobles@gmail.com`; "Hire me" → LinkedIn.
+- Menú en ambas páginas: Home / Portafolio / Contact (se quitaron About y
+  Services porque no tenían contenido).
+- `portafolios.html`: link del menú corregido, `</a>` suelto quitado, tarjetas
+  AgroMarket, DevConnect y TaskFlow marcadas "Próximamente" (clase `upcoming`).
 
-## Pendiente (en este orden)
+## Pendiente
 
-1. **Portada** — el párrafo bajo el título todavía dice ".net core web api…";
-   reemplazar por algo alineado a "AI Agent Developer", ej.: *"I build AI agents
-   that connect LLMs to real business data — ERPs, SQL Server, Power BI and
-   WhatsApp — with React and React Native frontends."* Los botones "Hire me" /
-   "Let's Talk" y los links `#` del menú (About, Services, Contact) no llevan a
-   nada. El ícono de Gmail está vacío — **preguntar** antes de publicar el email
-   (`juanpablococarobles@gmail.com`).
-2. **portafolios.html** — el menú apunta a `portfolio.html`, que NO existe (la
-   página es `portafolios.html`). Las tarjetas AgroMarket, DevConnect y TaskFlow
-   no tienen link: preguntar si se marcan "próximamente" o se quitan. Hay un
-   `</a>` suelto dentro del `<h3>` de Movie Review Hub.
-3. **Proyecto destacado: "Asistente Virtual con agente de IA para ERP"** (ver
+1. **Proyecto destacado: "Asistente Virtual con agente de IA para ERP"** (ver
    abajo).
 
 ## Proyecto destacado: Asistente Virtual (hecho en el trabajo)
