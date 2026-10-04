@@ -176,4 +176,15 @@ body {
     top: auto;
     left: auto;
 }
+.portfolio-item .try-link { transition: background .2s, color .2s, box-shadow .2s, transform .2s; }
 .portfolio-item:hover .try-link { border-color: #081b29; color: #081b29; }
+/* Hovering the button itself: it fills in and glows, so it reads as a separate action from the card link */
+.portfolio-item .try-link:hover,
+.portfolio-item .try-link:focus-visible {
+    background: #081b29;
+    border-color: #081b29;
+    color: #00abf0;
+    box-shadow: 0 0 0 3px rgba(0, 171, 240, .35), 0 0 16px rgba(0, 171, 240, .6);
+    transform: translateY(-1px) scale(1.04);
+    outline: none;
+}
