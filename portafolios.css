@@ -157,3 +157,23 @@ body {
 @media (max-width: 768px) {
     .portfolio-item .qr { display: none; }
 }
+
+/* Extra link inside a card: sits above the full-card link overlay */
+.portfolio-item .try-link {
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin-top: 12px;
+    padding: 6px 14px;
+    border: 1px solid #00abf0;
+    border-radius: 20px;
+    color: #00abf0;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    top: auto;
+    left: auto;
+}
+.portfolio-item:hover .try-link { border-color: #081b29; color: #081b29; }
